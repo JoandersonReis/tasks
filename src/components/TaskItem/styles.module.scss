@@ -1,0 +1,14 @@
+.taskItem {
+  display: flex;
+  align-items: center;
+
+  input {
+    border: none;
+    cursor: pointer;
+  }
+
+  label {
+    color: var(--color-dark-gray);
+    margin-left: 0.8rem;
+  }
+}

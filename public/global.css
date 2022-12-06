@@ -1,0 +1,60 @@
+:root {
+  --color-primary: #00CC99;
+  --color-secondary: #71F79F;
+  --color-background: #333533;
+  --color-dark-gray: #757575;
+  --color-gray: #829399;
+  --color-red: #F03A47;
+
+  --font-title: 'Kdam Thmor Pro', sans-serif;
+  --font-text: 'Work Sans', sans-serif;
+
+  font-size: 60%;
+}
+
+@media(min-width: 700px) {
+  :root {
+    font-size: 62.5%;
+  }
+}
+
+body {
+  background-color: var(--color-background);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  outline: 0;
+}
+
+li {
+  list-style: none;
+}
+
+h1,
+h2 {
+  font-family: var(--font-title);
+  font-size: 4.4rem;
+  color: #fff;
+}
+
+p,
+span,
+label,
+input,
+button,
+li {
+  font-family: var(--font-text);
+  font-size: 1.8rem;
+  color: #fff;
+  background-color: transparent;
+}
+
+button,
+label,
+li {
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
