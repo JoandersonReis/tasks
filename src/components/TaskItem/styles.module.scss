@@ -1,6 +1,17 @@
 .taskItem {
   display: flex;
   align-items: center;
+  opacity: 0;
+  animation: 1s opacityAnimation forwards;
+
+  .deleteTaskButton {
+    margin-right: 0.4rem;
+    opacity: 0.7;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
 
   input {
     border: none;
@@ -10,5 +21,32 @@
   label {
     color: var(--color-dark-gray);
     margin-left: 0.8rem;
+    transition: all 0.3s ease;
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 1.2rem;
+      left: 0;
+      height: 0.1rem;
+      width: 0%;
+      background-color: var(--color-dark-gray);
+      transition: all 0.3s ease;
+    }
+  }
+}
+
+.completed {
+  label {
+    &::after {
+      width: 100%;
+    }
+  }
+}
+
+@keyframes opacityAnimation {
+  100% {
+    opacity: 1;
   }
 }

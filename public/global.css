@@ -58,3 +58,13 @@ li {
   cursor: pointer;
   transition: all 0.3s ease;
 }
+
+button {
+  border: none;
+}
+
+section {
+  max-width: 1200px;
+  margin: 0 auto;
+  min-width: none;
+}
